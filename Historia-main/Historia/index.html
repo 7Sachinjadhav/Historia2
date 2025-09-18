@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heritage AR Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🇮🇳 Heritage AR</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#objectives">Objectives</a></li>
+      <li><a href="#impact">Future Impact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay">
+      <h1>Discover India's Timeless Heritage</h1>
+      <p>Preserving the past, inspiring the future—through immersive technology</p>
+      <button onclick="scrollToAge()">Start Your Journey</button>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>🌍 Why This Platform?</h2>
+    <p>
+      Our mission is to make India's cultural heritage accessible to all—especially children and elders—through interactive 3D models, AR, and narrated videos.
+    </p>
+  </section>
+
+  <!-- Objectives -->
+  <section class="heritage" id="objectives">
+    <h2>🏛️ India's Heritage Highlights</h2>
+    <div class="regions">
+      <div class="region"><h3>North</h3><p>Taj Mahal, Red Fort, Varanasi</p></div>
+      <div class="region"><h3>South</h3><p>Hampi, Mahabalipuram, Madurai</p></div>
+      <div class="region"><h3>East</h3><p>Konark, Nalanda, Odisha Tribes</p></div>
+      <div class="region"><h3>West</h3><p>Ajanta, Rajasthan Forts, Gujarat Stepwells</p></div>
+    </div>
+  </section>
+
+  <!-- Future Impact -->
+  <section class="impact" id="impact">
+    <h2>🚀 Future Impact</h2>
+    <p>
+      By blending technology with heritage, we aim to inspire curiosity, preserve cultural knowledge, and create immersive experiences for future generations.
+    </p>
+  </section>
+
+  <!-- Age Section (Centered) -->
+  <section class="age-section" id="ageSection">
+    <h2>🎯 Ready to Begin?</h2>
+    <p>Enter your age to unlock a personalized experience:</p>
+    <input type="number" id="ageInput" placeholder="Enter your age" />
+    <button onclick="checkAge()">Enter</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

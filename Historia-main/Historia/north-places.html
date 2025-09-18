@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore North India Heritage</title>
+  <link rel="stylesheet" href="north-places.css" />
+</head>
+<body>
+  <header>
+    <h1>🕌 Explore North India</h1>
+    <p>Click on any place to view its 3D model or watch a narrated 360° video.</p>
+    <input type="text" id="searchBar" placeholder="Search for a heritage site..." onkeyup="filterPlaces()" />
+  </header>
+
+  <section class="grid" id="placesGrid">
+    <!-- Example Card: Taj Mahal -->
+    <div class="card">
+      <img src="images/elders/tajmahal.jpg" alt="Taj Mahal" />
+      <h2>Taj Mahal</h2>
+      <div class="button-group">
+          <button id="open-3d-tajmahal">🧱 3D Model</button>
+          <button>🎥 360° Video + Narration</button>
+        </div>
+        <div class="ar-tip" style="margin-top:10px; color:#1565c0; font-family:'Segoe UI', Arial, sans-serif; font-size:16px; font-weight:500; letter-spacing:0.5px; background:rgba(230,240,255,0.7); padding:6px 18px; border-radius:7px; display:inline-block; box-shadow:0 2px 8px rgba(21,101,192,0.08);">Use AR for better experience</div>
+  
+      </div>
+    </div>
+
+    <!-- Repeat for other places -->
+    <div class="card">
+      <img src="images/elders/redfort.jpg" alt="Red Fort" />
+      <h2>Red Fort</h2>
+      <div class="button-group">
+        <button id="open-3d-redfort">🧱 3D Model</button>
+        <button>🎥 360° Video + Narration</button>
+      </div>
+        <div class="ar-tip" style="margin-top:10px; color:#1565c0; font-family:'Segoe UI', Arial, sans-serif; font-size:16px; font-weight:500; letter-spacing:0.5px; background:rgba(230,240,255,0.7); padding:6px 18px; border-radius:7px; display:inline-block; box-shadow:0 2px 8px rgba(21,101,192,0.08);">Use AR for better experience</div>
+      
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/elders/qutubminar.jpg" alt="Qutub Minar" />
+      <h2>Qutub Minar</h2>
+      <div class="button-group">
+        <button>🧱 3D Model</button>
+        <button>🎥 360° Video + Narration</button>
+      </div>
+        <div class="ar-tip" style="margin-top:10px; color:#1565c0; font-family:'Segoe UI', Arial, sans-serif; font-size:16px; font-weight:500; letter-spacing:0.5px; background:rgba(230,240,255,0.7); padding:6px 18px; border-radius:7px; display:inline-block; box-shadow:0 2px 8px rgba(21,101,192,0.08);">Use AR for better experience</div>
+    </div>
+
+    <div class="card">
+      <img src="images/elders/lotustemple.jpg" alt="Lotus Temple" />
+      <h2>Lotus Temple</h2>
+      <div class="button-group">
+        <button>🧱 3D Model</button>
+        <button>🎥 360° Video + Narration</button>
+      </div>
+        <div class="ar-tip" style="margin-top:10px; color:#1565c0; font-family:'Segoe UI', Arial, sans-serif; font-size:16px; font-weight:500; letter-spacing:0.5px; background:rgba(230,240,255,0.7); padding:6px 18px; border-radius:7px; display:inline-block; box-shadow:0 2px 8px rgba(21,101,192,0.08);">Use AR for better experience</div>
+    </div>
+
+    <div class="card">
+      <img src="images/elders/indiagate.jpg" alt="India Gate" />
+      <h2>India Gate</h2>
+      <div class="button-group">
+        <button>🧱 3D Model</button>
+        <button>🎥 360° Video + Narration</button>
+      </div>
+        <div class="ar-tip" style="margin-top:10px; color:#1565c0; font-family:'Segoe UI', Arial, sans-serif; font-size:16px; font-weight:500; letter-spacing:0.5px; background:rgba(230,240,255,0.7); padding:6px 18px; border-radius:7px; display:inline-block; box-shadow:0 2px 8px rgba(21,101,192,0.08);">Use AR for better experience</div>
+    </div>
+
+    <div class="card">
+      <img src="images/elders/humayunstomb.jpg" alt="Humayun's Tomb" />
+      <h2>Humayun's Tomb</h2>
+      <div class="button-group">
+        <button>🧱 3D Model</button>
+        <button>🎥 360° Video + Narration</button>
+      </div>
+        <div class="ar-tip" style="margin-top:10px; color:#1565c0; font-family:'Segoe UI', Arial, sans-serif; font-size:16px; font-weight:500; letter-spacing:0.5px; background:rgba(230,240,255,0.7); padding:6px 18px; border-radius:7px; display:inline-block; box-shadow:0 2px 8px rgba(21,101,192,0.08);">Use AR for better experience</div>
+    </div>
+
+    <div class="card">
+      <img src="images/elders/hawamahal.jpg" alt="Hawa Mahal" />
+      <h2>Hawa Mahal</h2>
+      <div class="button-group">
+        <button>🧱 3D Model</button>
+        <button>🎥 360° Video + Narration</button>
+      </div>
+        <div class="ar-tip" style="margin-top:10px; color:#1565c0; font-family:'Segoe UI', Arial, sans-serif; font-size:16px; font-weight:500; letter-spacing:0.5px; background:rgba(230,240,255,0.7); padding:6px 18px; border-radius:7px; display:inline-block; box-shadow:0 2px 8px rgba(21,101,192,0.08);">Use AR for better experience</div>
+    </div>
+
+    <div class="card">
+      <img src="images/elders/goldentemple.jpg" alt="Golden Temple" />
+      <h2>Golden Temple</h2>
+      <div class="button-group">
+        <button>🧱 3D Model</button>
+        <button>🎥 360° Video + Narration</button>
+      </div>
+        <div class="ar-tip" style="margin-top:10px; color:#1565c0; font-family:'Segoe UI', Arial, sans-serif; font-size:16px; font-weight:500; letter-spacing:0.5px; background:rgba(230,240,255,0.7); padding:6px 18px; border-radius:7px; display:inline-block; box-shadow:0 2px 8px rgba(21,101,192,0.08);">Use AR for better experience</div>
+    </div>
+
+    <div class="card">
+      <img src="images/elders/fatehpursikri.jpg" alt="Fatehpur Sikri" />
+      <h2>Fatehpur Sikri</h2>
+      <div class="button-group">
+        <button>🧱 3D Model</button>
+        <button>🎥 360° Video + Narration</button>
+      </div>
+        <div class="ar-tip" style="margin-top:10px; color:#1565c0; font-family:'Segoe UI', Arial, sans-serif; font-size:16px; font-weight:500; letter-spacing:0.5px; background:rgba(230,240,255,0.7); padding:6px 18px; border-radius:7px; display:inline-block; box-shadow:0 2px 8px rgba(21,101,192,0.08);">Use AR for better experience</div>
+    </div>
+
+    <div class="card">
+      <img src="images/elders/amerfort.jpg" alt="Amer Fort" />
+      <h2>Amer Fort</h2>
+      <div class="button-group">
+        <button>🧱 3D Model</button>
+        <button>🎥 360° Video + Narration</button>
+      </div>
+        <div class="ar-tip" style="margin-top:10px; color:#1565c0; font-family:'Segoe UI', Arial, sans-serif; font-size:16px; font-weight:500; letter-spacing:0.5px; background:rgba(230,240,255,0.7); padding:6px 18px; border-radius:7px; display:inline-block; box-shadow:0 2px 8px rgba(21,101,192,0.08);">Use AR for better experience</div>
+    </div>
+
+  <!-- Fullscreen 3D model popup for Red Fort -->
+  <div id="redfort-3d-popup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.95); z-index:9999; justify-content:center; align-items:center; flex-direction:column;">
+    <!-- Close icon -->
+    <span id="close-3d-redfort" style="position:absolute; top:30px; right:40px; font-size:40px; color:white; cursor:pointer;">&times;</span>
+    <!-- Popup message -->
+    <div style="position:absolute; top:80px; left:50%; transform:translateX(-50%); background:rgba(0,0,0,0.7); color:#fff; padding:10px 20px; border-radius:8px; font-size:18px;">Use AR for better experience</div>
+    <!-- 3D Model Viewer -->
+    <model-viewer src="images/models/redfort.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate style="width:80vw; height:80vh; background:#222; border-radius:16px; box-shadow:0 0 40px #000;" alt="Red Fort 3D Model"></model-viewer>
+  </div>
+  <!-- Fullscreen 3D model popup for Taj Mahal -->
+  <div id="tajmahal-3d-popup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.95); z-index:9999; justify-content:center; align-items:center; flex-direction:column;">
+    <!-- Close icon -->
+    <span id="close-3d-popup" style="position:absolute; top:30px; right:40px; font-size:40px; color:white; cursor:pointer;">&times;</span>
+    <!-- Popup message -->
+    <div style="position:absolute; top:80px; left:50%; transform:translateX(-50%); background:rgba(0,0,0,0.7); color:#fff; padding:10px 20px; border-radius:8px; font-size:18px;">Use AR for better experience</div>
+    <!-- 3D Model Viewer -->
+    <model-viewer src="images/models/tajmahal.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate style="width:80vw; height:80vh; background:#222; border-radius:16px; box-shadow:0 0 40px #000;" alt="Taj Mahal 3D Model"></model-viewer>
+  </div>
+  <!-- ...existing code... -->
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script>
+    function filterPlaces() {
+      const input = document.getElementById('searchBar').value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        const title = card.querySelector('h2').textContent.toLowerCase();
+        card.style.display = title.includes(input) ? 'block' : 'none';
+      });
+    }
+
+    // Show popup on Taj Mahal 3D button click
+    document.getElementById('open-3d-tajmahal').onclick = function() {
+      document.getElementById('tajmahal-3d-popup').style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // Prevent background scroll
+    };
+    // Hide popup on Taj Mahal close icon click
+    document.getElementById('close-3d-popup').onclick = function() {
+      document.getElementById('tajmahal-3d-popup').style.display = 'none';
+      document.body.style.overflow = '';
+    };
+
+    // Show popup on Red Fort 3D button click
+    document.getElementById('open-3d-redfort').onclick = function() {
+      document.getElementById('redfort-3d-popup').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    };
+    // Hide popup on Red Fort close icon click
+    document.getElementById('close-3d-redfort').onclick = function() {
+      document.getElementById('redfort-3d-popup').style.display = 'none';
+      document.body.style.overflow = '';
+    };
+  </script>
+</body>
+</html>

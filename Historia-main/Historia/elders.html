@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elders Heritage Portal</title>
+  <link rel="stylesheet" href="elders.css" />
+</head>
+<body>
+  <div class="carousel">
+    <!-- North India Slide with Link -->
+    <div class="slide active" style="background-image: url('images/elders/tajmahal.jpg');">
+      <a href="north-places.html" class="overlay">
+        <h1>North India</h1>
+        <p>Click to explore all the places in North India</p>
+      </a>
+    </div>
+
+    <!-- South India Slide with Link -->
+    <div class="slide" style="background-image: url('images/elders/hampi.jpg');">
+      <a href="south-places.html" class="overlay">
+        <h1>South India</h1>
+        <p>Click to explore all the places in South India</p>
+      </a>
+    </div>
+
+    <!-- East India -->
+    <div class="slide" style="background-image: url('images/elders/konark.jpg');">
+      <div class="overlay">
+        <h1>East India</h1>
+        <p>Marvel at the celestial artistry of the Konark Sun Temple in Odisha.</p>
+      </div>
+    </div>
+
+    <!-- West India -->
+    <div class="slide" style="background-image: url('images/elders/ajanta.jpg');">
+      <div class="overlay">
+        <h1>West India</h1>
+        <p>Journey through the ancient Ajanta Caves and their Buddhist murals.</p>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="nav left" onclick="prevSlide()">&#10094;</button>
+    <button class="nav right" onclick="nextSlide()">&#10095;</button>
+  </div>
+
+  <script src="elders.js"></script>
+</body>
+</html>
